@@ -1,6 +1,12 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class NewGameBtw
+public class SceneButton : MonoBehaviour
 {
-    
+    public string sceneName;
+
+    public void LoadScene()
+    {
+        SceneManager.LoadScene(sceneName);
+    }
 }
