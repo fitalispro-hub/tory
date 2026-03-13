@@ -117,7 +117,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -170,11 +170,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 128
-        width: 16
-        height: 32
+        y: 129
+        width: 15
+        height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -191,12 +191,12 @@ TextureImporter:
       name: tileset_rails_1
       rect:
         serializedVersion: 2
-        x: 17
-        y: 135
-        width: 13
-        height: 25
+        x: 18
+        y: 136
+        width: 11
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -213,12 +213,12 @@ TextureImporter:
       name: tileset_rails_2
       rect:
         serializedVersion: 2
-        x: 33
-        y: 95
-        width: 13
-        height: 65
+        x: 34
+        y: 96
+        width: 11
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -235,12 +235,12 @@ TextureImporter:
       name: tileset_rails_3
       rect:
         serializedVersion: 2
-        x: 49
-        y: 136
-        width: 13
-        height: 16
+        x: 50
+        y: 137
+        width: 11
+        height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -257,12 +257,12 @@ TextureImporter:
       name: tileset_rails_4
       rect:
         serializedVersion: 2
-        x: 49
-        y: 127
-        width: 15
-        height: 10
+        x: 66
+        y: 96
+        width: 11
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -279,12 +279,12 @@ TextureImporter:
       name: tileset_rails_5
       rect:
         serializedVersion: 2
-        x: 65
-        y: 95
-        width: 13
-        height: 65
+        x: 82
+        y: 96
+        width: 11
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -301,12 +301,12 @@ TextureImporter:
       name: tileset_rails_6
       rect:
         serializedVersion: 2
-        x: 81
-        y: 95
-        width: 13
-        height: 65
+        x: 96
+        y: 130
+        width: 32
+        height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -323,12 +323,12 @@ TextureImporter:
       name: tileset_rails_7
       rect:
         serializedVersion: 2
-        x: 95
-        y: 129
-        width: 34
-        height: 29
+        x: 130
+        y: 130
+        width: 27
+        height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -345,12 +345,12 @@ TextureImporter:
       name: tileset_rails_8
       rect:
         serializedVersion: 2
-        x: 129
-        y: 129
-        width: 29
-        height: 29
+        x: 18
+        y: 105
+        width: 11
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -367,12 +367,12 @@ TextureImporter:
       name: tileset_rails_9
       rect:
         serializedVersion: 2
-        x: 0
-        y: 96
-        width: 16
-        height: 32
+        x: 50
+        y: 128
+        width: 13
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -389,12 +389,12 @@ TextureImporter:
       name: tileset_rails_10
       rect:
         serializedVersion: 2
-        x: 17
-        y: 104
-        width: 13
-        height: 25
+        x: 98
+        y: 96
+        width: 27
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -411,12 +411,12 @@ TextureImporter:
       name: tileset_rails_11
       rect:
         serializedVersion: 2
-        x: 49
-        y: 104
-        width: 13
-        height: 15
+        x: 128
+        y: 64
+        width: 32
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -433,12 +433,12 @@ TextureImporter:
       name: tileset_rails_12
       rect:
         serializedVersion: 2
-        x: 49
-        y: 95
+        x: 0
+        y: 97
         width: 15
-        height: 10
+        height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -455,12 +455,12 @@ TextureImporter:
       name: tileset_rails_13
       rect:
         serializedVersion: 2
-        x: 97
-        y: 95
-        width: 29
-        height: 34
+        x: 50
+        y: 105
+        width: 11
+        height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -477,12 +477,12 @@ TextureImporter:
       name: tileset_rails_14
       rect:
         serializedVersion: 2
-        x: 127
-        y: 63
-        width: 33
-        height: 66
+        x: 50
+        y: 96
+        width: 13
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -499,12 +499,12 @@ TextureImporter:
       name: tileset_rails_15
       rect:
         serializedVersion: 2
-        x: 0
-        y: 79
-        width: 96
-        height: 17
+        x: 1
+        y: 80
+        width: 94
+        height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -521,12 +521,12 @@ TextureImporter:
       name: tileset_rails_16
       rect:
         serializedVersion: 2
-        x: 7
-        y: 65
-        width: 17
-        height: 14
+        x: 96
+        y: 66
+        width: 32
+        height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -543,12 +543,12 @@ TextureImporter:
       name: tileset_rails_17
       rect:
         serializedVersion: 2
-        x: 23
-        y: 64
-        width: 66
-        height: 15
+        x: 8
+        y: 66
+        width: 15
+        height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -565,12 +565,12 @@ TextureImporter:
       name: tileset_rails_18
       rect:
         serializedVersion: 2
-        x: 95
+        x: 24
         y: 65
-        width: 34
-        height: 29
+        width: 64
+        height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -587,20 +587,20 @@ TextureImporter:
       name: tileset_rails_19
       rect:
         serializedVersion: 2
-        x: 0
-        y: 47
-        width: 96
-        height: 17
+        x: 1
+        y: 48
+        width: 94
+        height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a88cc96cd8111b590800000000000000
-      internalID: -7660322190560278390
+      spriteID: 7fd1813742e759746966590205855782
+      internalID: 160480545
       vertices: []
       indices: 
       edges: []
@@ -609,20 +609,20 @@ TextureImporter:
       name: tileset_rails_20
       rect:
         serializedVersion: 2
-        x: 9
-        y: 33
-        width: 15
-        height: 14
+        x: 10
+        y: 34
+        width: 13
+        height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 525ed8c447e8f5b20800000000000000
-      internalID: 3125373296570131749
+      spriteID: 6c93fc726aa9e5d4fa8d1ed1236096a5
+      internalID: 533679177
       vertices: []
       indices: 
       edges: []
@@ -631,20 +631,20 @@ TextureImporter:
       name: tileset_rails_21
       rect:
         serializedVersion: 2
-        x: 23
-        y: 32
-        width: 63
-        height: 15
+        x: 24
+        y: 33
+        width: 61
+        height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 51cb6e1bc4c1e0f40800000000000000
-      internalID: 5696521694398037013
+      spriteID: 721e537eaab7d3b40a33a8acef267f11
+      internalID: 1023229159
       vertices: []
       indices: 
       edges: []
@@ -654,19 +654,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 15
-        width: 17
-        height: 18
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 69134444c55959650800000000000000
-      internalID: 6239057082306539926
+      spriteID: fdf5f6da47bb95641bc88a6402e7d1da
+      internalID: 1971380706
       vertices: []
       indices: 
       edges: []
@@ -675,7 +675,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f1f020ccc9267f543b45cfbb6428422f
     internalID: 0
     vertices: []
     indices: 
@@ -683,7 +683,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       tileset_rails_0: -122559052411634858
       tileset_rails_1: 3422044179771135099
@@ -696,11 +698,11 @@ TextureImporter:
       tileset_rails_16: -8829384034146607082
       tileset_rails_17: -2402206002236707624
       tileset_rails_18: 2138570570254521314
-      tileset_rails_19: -7660322190560278390
+      tileset_rails_19: 160480545
       tileset_rails_2: 5588342534400918705
-      tileset_rails_20: 3125373296570131749
-      tileset_rails_21: 5696521694398037013
-      tileset_rails_22: 6239057082306539926
+      tileset_rails_20: 533679177
+      tileset_rails_21: 1023229159
+      tileset_rails_22: 1971380706
       tileset_rails_3: 3315955295810386767
       tileset_rails_4: -2532494985461365614
       tileset_rails_5: 1270963470481687392
