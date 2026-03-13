@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 714460810}
   - component: {fileID: 714460811}
   - component: {fileID: 714460812}
+  - component: {fileID: 714460813}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Player
@@ -339,6 +340,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14b41b7004d691f4290cc6761ca3cc95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateObject
+  rotationAngle: 90
+  inRange: 0
+  interactAction:
+    m_Name: Interact
+    m_Type: 0
+    m_ExpectedControlType: Button
+    m_Id: e1b941a6-877d-4914-abd9-12f3f22f30dd
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+--- !u!114 &714460813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714460804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInput
+  m_Actions: {fileID: -944628639613478452, guid: e1ce3558bddb19f4f99ddadd1ac65e9b, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: a8781831-48c4-4cf1-87e7-0fae40c30f4f
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &1051134846
 GameObject:
   m_ObjectHideFlags: 0

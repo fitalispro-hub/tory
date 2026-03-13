@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class RotateObject : MonoBehaviour
 {
@@ -6,9 +7,9 @@ public class RotateObject : MonoBehaviour
     float change = 90f;
     private Transform currentObject;
 
-    void Update()
+    public void OnInteract(InputValue value)
     {
-        if (inRange && currentObject != null && Input.GetKeyDown(KeyCode.F))
+        if (value.isPressed && inRange && currentObject != null)
         {
             currentObject.Rotate(0f, 0f, change);
             Debug.Log("Obrócono obiekt: " + currentObject.name);
