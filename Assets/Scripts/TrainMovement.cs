@@ -3,7 +3,7 @@
 public class TrainMovement : MonoBehaviour
 {
     public float speed = 5f;
-    public float destroyX = 12f;
+    public float destroyX = 15f;
 
     void Update()
     {
