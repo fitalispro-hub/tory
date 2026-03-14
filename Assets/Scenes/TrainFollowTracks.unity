@@ -738,6 +738,63 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DetectTrackEnd
   train: {fileID: 1619942608}
   rotationSpeed: 5e+10
+--- !u!1001 &510180697286624155
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5303672705875081098, guid: 07efbc3338b6c564eae6963e82fe99f1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.0850565
+      objectReference: {fileID: 0}
+    - target: {fileID: 5303672705875081098, guid: 07efbc3338b6c564eae6963e82fe99f1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.008391112
+      objectReference: {fileID: 0}
+    - target: {fileID: 5303672705875081098, guid: 07efbc3338b6c564eae6963e82fe99f1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5303672705875081098, guid: 07efbc3338b6c564eae6963e82fe99f1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5303672705875081098, guid: 07efbc3338b6c564eae6963e82fe99f1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5303672705875081098, guid: 07efbc3338b6c564eae6963e82fe99f1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5303672705875081098, guid: 07efbc3338b6c564eae6963e82fe99f1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5303672705875081098, guid: 07efbc3338b6c564eae6963e82fe99f1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5303672705875081098, guid: 07efbc3338b6c564eae6963e82fe99f1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5303672705875081098, guid: 07efbc3338b6c564eae6963e82fe99f1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7864162632030807160, guid: 07efbc3338b6c564eae6963e82fe99f1, type: 3}
+      propertyPath: m_Name
+      value: RailRoads_Tileset_2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 07efbc3338b6c564eae6963e82fe99f1, type: 3}
 --- !u!1001 &928292607504134779
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -920,3 +977,4 @@ SceneRoots:
   - {fileID: 4627808408162370670}
   - {fileID: 928292607504134779}
   - {fileID: 7937442611804959719}
+  - {fileID: 510180697286624155}
