@@ -3,60 +3,90 @@ using UnityEngine;
 public class DetectTrackEnd : MonoBehaviour
 {
     public GameObject train;
+    public float rotationSpeed = 50000000000f; // Increased for better feel
 
-    private bool trainCrash = false;
+    // Turn control variables
+    private bool isTurning = false;
+    private Vector3 currentRotation = new Vector3(0, 0, 0);
+    private Quaternion targetRotation;
 
     private int coveredTracksAmount = 0;
 
-    // This method is called when the train's collider starts touching another collider
-    private void OnTriggerEnter2D(Collider2D other)
+private void OnTriggerEnter2D(Collider2D other)
+{
+    if (other.CompareTag("Track_Straight"))
     {
-        // Check if the collided object has the "Track" tag
-        if (other.CompareTag("Track_Straight"))
+        coveredTracksAmount++;
+        // Teleport pociągu na pozycję pierwszego dziecka tracka, jeśli istnieje
+        if (other.transform.childCount > 0)
         {
-            Debug.Log("Train entered straight track: " + other.gameObject.name);
-            coveredTracksAmount++;
-            Debug.Log(coveredTracksAmount);
-            // Add your track collision logic here
-            // For example: stop the train, trigger events, etc.
-        }
-        if (other.CompareTag("Track_Left"))
-        {
-            
+            train.transform.position = other.transform.GetChild(0).position;
         }
     }
+    
+    if (other.CompareTag("Track_Left"))
+    {
+        // Instantly rotate the train by adding 90 degrees to its current rotation
+        train.transform.Rotate(0, 0, 90);
+        train.transform.position += train.transform.right * 0.5f;
+        coveredTracksAmount++;
+        // Teleport pociągu na pozycję pierwszego dziecka tracka, jeśli istnieje
+        if (other.transform.childCount > 0)
+        {
+            train.transform.position = other.transform.GetChild(0).position;
+        }
+    }
+    if (other.CompareTag("Track_Right"))
+    {
+        train.transform.Rotate(currentRotation - new Vector3(0, 0, 90));
+        train.transform.position += train.transform.up * -0.5f;
+        coveredTracksAmount++;
+        // Teleport pociągu na pozycję pierwszego dziecka tracka, jeśli istnieje
+        if (other.transform.childCount > 0)
+        {
+            train.transform.position = other.transform.GetChild(0).position;
+        }
+    }
+}
 
-    // This method is called when the train's collider stops touching another collider
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Track_Straight"))
         {
-            Debug.Log("Train exited straight track: " + other.gameObject.name);
-            coveredTracksAmount++;
-            Debug.Log(coveredTracksAmount);
-            // Add your track exit logic here
+            coveredTracksAmount--;
         }
-    }
-
-    // Optional: This method is called every frame while colliding
-    // private void OnTriggerStay2D(Collider2D other)
-    // {
-    //     if (other.CompareTag("Track_Straight"))
-    //     {
-    //         // This runs continuously while touching the track
-    //         // Useful for things like "train is on track" checks
-    //     }
-    // }
-
-    void Start()
-    {
-
+        if (other.CompareTag("Track_Left"))
+        {
+            coveredTracksAmount--;
+        }
+        if (other.CompareTag("Track_Right"))
+        {
+            coveredTracksAmount--;
+        }
     }
 
     void Update()
     {
+        // 1. Handle Turning
+        if (isTurning)
+        {
+            train.transform.rotation = Quaternion.RotateTowards(
+                train.transform.rotation, 
+                targetRotation, 
+                rotationSpeed * Time.deltaTime
+            );
+
+            // Stop turning once we reach the target
+            if (train.transform.rotation == targetRotation)
+            {
+                isTurning = false;
+            }
+        }
+
+        // 2. Handle Crash Detection
         if (coveredTracksAmount <= 0)
         {
+            // Optional: Add a delay here so it doesn't log every frame
             Debug.Log("Cho cho crash :(");
         }
     }
