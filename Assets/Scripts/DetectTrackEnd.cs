@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DetectTrackEnd : MonoBehaviour
 {
@@ -10,10 +11,19 @@ public class DetectTrackEnd : MonoBehaviour
     private Vector3 currentRotation = new Vector3(0, 0, 0);
     private Quaternion targetRotation;
 
-    private int coveredTracksAmount = 0;
+    public string sceneName = "GameOver";
+
+    private int coveredTracksAmount = 1;
+
+    private bool start = false;
 
 private void OnTriggerEnter2D(Collider2D other)
 {
+    if (!start)
+    {
+        coveredTracksAmount--;
+        start = true;
+    }
     if (other.CompareTag("Track_Straight"))
     {
         coveredTracksAmount++;
@@ -65,6 +75,11 @@ private void OnTriggerEnter2D(Collider2D other)
         }
     }
 
+
+    public void LoadScene()
+            {
+                SceneManager.LoadScene(sceneName);
+            }
     void Update()
     {
         // 1. Handle Turning
@@ -82,12 +97,14 @@ private void OnTriggerEnter2D(Collider2D other)
                 isTurning = false;
             }
         }
-
+        
+        
         // 2. Handle Crash Detection
         if (coveredTracksAmount <= 0)
         {
             // Optional: Add a delay here so it doesn't log every frame
             Debug.Log("Cho cho crash :(");
-        }
+            // timerTrain?.StopMoving();
+            LoadScene();
     }
-}
+}}

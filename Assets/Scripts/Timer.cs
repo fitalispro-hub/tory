@@ -3,10 +3,13 @@ using UnityEngine;
 
 public class DebugText : MonoBehaviour
 {
+
+    public TrainSpawnerAfterTimer trainSpawner;
     [SerializeField] public TextMeshProUGUI timerText;
     public GameObject progressBar; 
-    public GameObject timerTrain;
-    
+    public TrainMovement timerTrain;
+    private bool hasStartedMoving;
+
     public float targetTime = 60.0f;
     public float maxScaleX = 12f; // The X scale of the bar when fully grown
     
@@ -26,6 +29,12 @@ public class DebugText : MonoBehaviour
         float currentActualWidth = baseSpriteWidth * progressBar.transform.localScale.x;
         leftAnchorX = progressBar.transform.localPosition.x - (currentActualWidth / 2f);
     }
+
+    public void SomeFunction()
+    {
+        trainSpawner.SpawnTrain();
+    }
+
 
     private void Update()
     {
@@ -56,6 +65,13 @@ public class DebugText : MonoBehaviour
         }
         else
         {
+            if (!hasStartedMoving)
+            {
+                hasStartedMoving = true;
+                Debug.Log("Timer finished, calling StartMoving on train");
+                SomeFunction();
+            }
+
             timerText.text = "TRAIN IS COMING!!!";
             
             // Lock everything to the final full-width position

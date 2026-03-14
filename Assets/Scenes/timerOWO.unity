@@ -311,7 +311,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 871774616392283076, guid: b12868f86eaf07a4e9aa0934f342908b, type: 3}
       propertyPath: m_Name
-      value: Train
+      value: Train_timer
       objectReference: {fileID: 0}
     - target: {fileID: 3799971107945885594, guid: b12868f86eaf07a4e9aa0934f342908b, type: 3}
       propertyPath: m_LocalScale.x

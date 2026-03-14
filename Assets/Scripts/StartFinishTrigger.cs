@@ -4,9 +4,9 @@ public class StartFinishTrigger : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D other)
     {
-        TrainController train = other.GetComponent<TrainController>();
+        TrainMovement train = other.GetComponent<TrainMovement>();
         if (train != null)
-            train.OnPassedStart();
+            train.StartMoving();
     }
 
     void OnDrawGizmos()

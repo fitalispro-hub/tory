@@ -7,32 +7,46 @@ public class RotateObject : MonoBehaviour
     float change = 90f;
     private Transform currentObject;
 
+    private InputSystem_Actions inputActions;
+
+    private void Awake()
+    {
+        inputActions = new InputSystem_Actions();
+        inputActions.Player.Enable();
+    }
+
+    private void OnDestroy()
+    {
+        inputActions.Player.Disable();
+        inputActions.Dispose();
+    }
+
     public void OnInteract(InputValue value)
     {
-        if (value.isPressed && inRange && currentObject != null)
+        if (inputActions.Player.Interact.WasPressedThisFrame() && inRange && currentObject != null)
         {
             currentObject.Rotate(0f, 0f, change);
-            Debug.Log("Obrócono obiekt: " + currentObject.name);
+            Debug.Log("Obrï¿½cono obiekt: " + currentObject.name);
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Interactable"))
+        if (other.CompareTag("Track_Straight") || other.CompareTag("Track_Left") || other.CompareTag("Track_Right"))
         {
             inRange = true;
             currentObject = other.transform;
-            Debug.Log("W zasiêgu: " + currentObject.name);
+            Debug.Log("W zasiï¿½gu: " + currentObject.name);
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Interactable"))
+        if (other.CompareTag("Track_Straight") || other.CompareTag("Track_Left") || other.CompareTag("Track_Right"))
         {
             inRange = false;
             currentObject = null;
-            Debug.Log("Opuszczono zasiêg obiektu");
+            Debug.Log("Opuszczono zasiï¿½g obiektu");
         }
     }
 }
