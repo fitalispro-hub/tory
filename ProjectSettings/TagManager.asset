@@ -7,6 +7,9 @@ TagManager:
   - Interactable
   - train
   - Train
+  - Track_Straight
+  - Track_Left
+  - Track_Right
   layers:
   - Default
   - TransparentFX
