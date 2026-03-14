@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 152826756}
   - component: {fileID: 152826755}
   - component: {fileID: 152826754}
+  - component: {fileID: 152826757}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -211,6 +212,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &152826757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152826753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
+  m_Version: 2
 --- !u!1 &245637006
 GameObject:
   m_ObjectHideFlags: 0
@@ -3070,6 +3115,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7981481317653899798, guid: c1f53a94c57286c4abda13b57b968554, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8533752560818673083, guid: c1f53a94c57286c4abda13b57b968554, type: 3}
       propertyPath: m_Name
       value: RailRoads_Tileset_1 (5)
@@ -3087,6 +3136,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1197605455710810777, guid: 71bd2f6ad00dd3f4196b11900bdc0ea3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5224086515400658868, guid: 71bd2f6ad00dd3f4196b11900bdc0ea3, type: 3}
       propertyPath: m_Name
       value: RailRoads_Tileset_0
@@ -3201,6 +3254,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1197605455710810777, guid: 71bd2f6ad00dd3f4196b11900bdc0ea3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5224086515400658868, guid: 71bd2f6ad00dd3f4196b11900bdc0ea3, type: 3}
       propertyPath: m_Name
       value: RailRoads_Tileset_0 (2)
@@ -3302,6 +3359,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7940974148763907609, guid: e479d01b4d6bc7f43b91048c9bbc1f19, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3355,6 +3416,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7981481317653899798, guid: c1f53a94c57286c4abda13b57b968554, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8533752560818673083, guid: c1f53a94c57286c4abda13b57b968554, type: 3}
       propertyPath: m_Name
       value: RailRoads_Tileset_1 (6)
@@ -3372,6 +3437,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1197605455710810777, guid: 71bd2f6ad00dd3f4196b11900bdc0ea3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5224086515400658868, guid: 71bd2f6ad00dd3f4196b11900bdc0ea3, type: 3}
       propertyPath: m_Name
       value: RailRoads_Tileset_0 (11)
@@ -3429,6 +3498,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1197605455710810777, guid: 71bd2f6ad00dd3f4196b11900bdc0ea3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5224086515400658868, guid: 71bd2f6ad00dd3f4196b11900bdc0ea3, type: 3}
       propertyPath: m_Name
       value: RailRoads_Tileset_0 (5)
@@ -3486,6 +3559,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1197605455710810777, guid: 71bd2f6ad00dd3f4196b11900bdc0ea3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5224086515400658868, guid: 71bd2f6ad00dd3f4196b11900bdc0ea3, type: 3}
       propertyPath: m_Name
       value: RailRoads_Tileset_0 (10)
@@ -3543,6 +3620,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2574187070695097003, guid: 07efbc3338b6c564eae6963e82fe99f1, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5303672705875081098, guid: 07efbc3338b6c564eae6963e82fe99f1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.5745258
@@ -3657,6 +3738,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2574187070695097003, guid: 07efbc3338b6c564eae6963e82fe99f1, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5303672705875081098, guid: 07efbc3338b6c564eae6963e82fe99f1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.3756409
@@ -3754,6 +3839,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7981481317653899798, guid: c1f53a94c57286c4abda13b57b968554, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8533752560818673083, guid: c1f53a94c57286c4abda13b57b968554, type: 3}
       propertyPath: m_Name
       value: RailRoads_Tileset_1 (1)
@@ -3771,6 +3860,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1197605455710810777, guid: 71bd2f6ad00dd3f4196b11900bdc0ea3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5224086515400658868, guid: 71bd2f6ad00dd3f4196b11900bdc0ea3, type: 3}
       propertyPath: m_Name
       value: RailRoads_Tileset_0 (4)
@@ -3832,6 +3925,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailRoads_Tileset_5 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 2456112737901615277, guid: d1f2073a93befc84181c8b83ffdb77c3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7972786138587263288, guid: d1f2073a93befc84181c8b83ffdb77c3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.444309
@@ -3889,6 +3986,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailRoads_Tileset_5 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2456112737901615277, guid: d1f2073a93befc84181c8b83ffdb77c3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7972786138587263288, guid: d1f2073a93befc84181c8b83ffdb77c3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.4444425
@@ -3942,6 +4043,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1197605455710810777, guid: 71bd2f6ad00dd3f4196b11900bdc0ea3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5224086515400658868, guid: 71bd2f6ad00dd3f4196b11900bdc0ea3, type: 3}
       propertyPath: m_Name
       value: RailRoads_Tileset_0 (6)
@@ -4039,6 +4144,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7981481317653899798, guid: c1f53a94c57286c4abda13b57b968554, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8533752560818673083, guid: c1f53a94c57286c4abda13b57b968554, type: 3}
       propertyPath: m_Name
       value: RailRoads_Tileset_1 (9)
@@ -4096,6 +4205,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7981481317653899798, guid: c1f53a94c57286c4abda13b57b968554, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8533752560818673083, guid: c1f53a94c57286c4abda13b57b968554, type: 3}
       propertyPath: m_Name
       value: RailRoads_Tileset_1 (7)
@@ -4113,6 +4226,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1197605455710810777, guid: 71bd2f6ad00dd3f4196b11900bdc0ea3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5224086515400658868, guid: 71bd2f6ad00dd3f4196b11900bdc0ea3, type: 3}
       propertyPath: m_Name
       value: RailRoads_Tileset_0 (1)
@@ -4170,6 +4287,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2574187070695097003, guid: 07efbc3338b6c564eae6963e82fe99f1, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5303672705875081098, guid: 07efbc3338b6c564eae6963e82fe99f1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.3760132
@@ -4313,6 +4434,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7981481317653899798, guid: c1f53a94c57286c4abda13b57b968554, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8533752560818673083, guid: c1f53a94c57286c4abda13b57b968554, type: 3}
       propertyPath: m_Name
       value: RailRoads_Tileset_1 (4)
@@ -4333,6 +4458,10 @@ PrefabInstance:
     - target: {fileID: 2403781748617375946, guid: d1f2073a93befc84181c8b83ffdb77c3, type: 3}
       propertyPath: m_Name
       value: RailRoads_Tileset_5 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2456112737901615277, guid: d1f2073a93befc84181c8b83ffdb77c3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7972786138587263288, guid: d1f2073a93befc84181c8b83ffdb77c3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4448,6 +4577,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailRoads_Tileset_5 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2456112737901615277, guid: d1f2073a93befc84181c8b83ffdb77c3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7972786138587263288, guid: d1f2073a93befc84181c8b83ffdb77c3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.571445
@@ -4501,6 +4634,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1197605455710810777, guid: 71bd2f6ad00dd3f4196b11900bdc0ea3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5224086515400658868, guid: 71bd2f6ad00dd3f4196b11900bdc0ea3, type: 3}
       propertyPath: m_Name
       value: RailRoads_Tileset_0 (7)
@@ -4598,6 +4735,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7981481317653899798, guid: c1f53a94c57286c4abda13b57b968554, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8533752560818673083, guid: c1f53a94c57286c4abda13b57b968554, type: 3}
       propertyPath: m_Name
       value: RailRoads_Tileset_1 (2)
@@ -4618,6 +4759,10 @@ PrefabInstance:
     - target: {fileID: 2403781748617375946, guid: d1f2073a93befc84181c8b83ffdb77c3, type: 3}
       propertyPath: m_Name
       value: RailRoads_Tileset_5 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2456112737901615277, guid: d1f2073a93befc84181c8b83ffdb77c3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7972786138587263288, guid: d1f2073a93befc84181c8b83ffdb77c3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4672,6 +4817,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1197605455710810777, guid: 71bd2f6ad00dd3f4196b11900bdc0ea3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5224086515400658868, guid: 71bd2f6ad00dd3f4196b11900bdc0ea3, type: 3}
       propertyPath: m_Name
       value: RailRoads_Tileset_0 (8)
@@ -4942,6 +5091,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailRoads_Tileset_5
       objectReference: {fileID: 0}
+    - target: {fileID: 2456112737901615277, guid: d1f2073a93befc84181c8b83ffdb77c3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7972786138587263288, guid: d1f2073a93befc84181c8b83ffdb77c3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.4828708
@@ -4995,6 +5148,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1197605455710810777, guid: 71bd2f6ad00dd3f4196b11900bdc0ea3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5224086515400658868, guid: 71bd2f6ad00dd3f4196b11900bdc0ea3, type: 3}
       propertyPath: m_Name
       value: RailRoads_Tileset_0 (9)
@@ -5055,6 +5212,10 @@ PrefabInstance:
     - target: {fileID: 2403781748617375946, guid: d1f2073a93befc84181c8b83ffdb77c3, type: 3}
       propertyPath: m_Name
       value: RailRoads_Tileset_5 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2456112737901615277, guid: d1f2073a93befc84181c8b83ffdb77c3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7972786138587263288, guid: d1f2073a93befc84181c8b83ffdb77c3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5149,6 +5310,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7981481317653899798, guid: c1f53a94c57286c4abda13b57b968554, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8533752560818673083, guid: c1f53a94c57286c4abda13b57b968554, type: 3}
       propertyPath: m_Name
       value: RailRoads_Tileset_1 (3)
@@ -5206,6 +5371,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7981481317653899798, guid: c1f53a94c57286c4abda13b57b968554, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8533752560818673083, guid: c1f53a94c57286c4abda13b57b968554, type: 3}
       propertyPath: m_Name
       value: RailRoads_Tileset_1 (8)
@@ -5223,6 +5392,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2574187070695097003, guid: 07efbc3338b6c564eae6963e82fe99f1, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5303672705875081098, guid: 07efbc3338b6c564eae6963e82fe99f1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.6368995
@@ -5284,6 +5457,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RailRoads_Tileset_5 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2456112737901615277, guid: d1f2073a93befc84181c8b83ffdb77c3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7972786138587263288, guid: d1f2073a93befc84181c8b83ffdb77c3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.5061092
@@ -5340,6 +5517,10 @@ PrefabInstance:
     - target: {fileID: 2403781748617375946, guid: d1f2073a93befc84181c8b83ffdb77c3, type: 3}
       propertyPath: m_Name
       value: RailRoads_Tileset_5 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2456112737901615277, guid: d1f2073a93befc84181c8b83ffdb77c3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7972786138587263288, guid: d1f2073a93befc84181c8b83ffdb77c3, type: 3}
       propertyPath: m_LocalPosition.x
